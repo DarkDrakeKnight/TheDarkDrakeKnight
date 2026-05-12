@@ -5,12 +5,18 @@ body {
   margin: 0;
   padding: 0;
 }
-header {
+header.hero {
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
   background: #332f3e;
   border-bottom: 3px solid #9b7fff;
 }
+.hero-icon {
+  width: 54px;
+  display: block;
+  margin: 0.75rem auto;
+}
+
 nav {
   text-align: center;
   margin: 1rem 0;
@@ -21,8 +27,8 @@ nav a {
   margin: 0 1em;
   font-weight: bold;
 }
-main { max-width: 800px; margin: 2rem auto; }
-section { margin: 2em 0; }
+main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem}
+section { margin: 2.5em 0; }
 footer {
   text-align: center; padding: 1em 0;
   background: #332f3e; color: #9b7fff;
@@ -34,3 +40,48 @@ h1, h2 {
   text-shadow: 1px 2px 4px #332f3e;
 }
 a { color: #00b2ff; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  display: block;
+  background: #252030;
+  border: 1px solid #4b4360;
+  border-radius: 14px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #eee;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #9b7fff;
+}
+
+.project-card span {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #9b7fff;
+  font-size: 0.9rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  background: #9b7fff;
+  color: #18141e;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #b59cff;
+}
