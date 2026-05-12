@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <h1>DarkDrakeKnight's Portfolio</h1>
-    <img src="https://img.icons8.com/ios-filled/100/000000/sword.png" alt="Sword" style="width:54px;">
+    <img src="https://img.icons8.com/ios-filled/100/000000/sword.png" alt="Sword" class="hero-icon" style="width:54px;">
     <p>Adventurer • Blacksmith • Gamer • Builder of Worlds</p>
+    <a class="button" href="projects.html">View Projects</a>
   </header>
   <nav>
     <a href="#about">About</a> | 
-    <a href="#projects">Projects</a> | 
+    <a href="projects.html">Projects</a> | 
     <a href="#contact">Contact</a>
   </nav>
   <main>
@@ -28,35 +29,29 @@
       <p>I am a Disabled Veteran of 13 years Active Duty Military. My experiance in those years have made me a team player, critical thinker, and a reposible leader.
          I am quick to adapt to new things and structure with a guiding hand. When I have the know how I strive to get the Job done within sensible time and quality</p>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Zombies in the Basement</strong> — A first-person zombie horror game built in Unity.
-          I contributed to the development of a tense survival experience with horror gameplay elements.
-        </li>
-        <li>
-          <strong>Game of Life</strong> — A class project based on Conway’s Game of Life.
-          This project focused on simulation logic, pattern behavior, and programming fundamentals.
-        </li>
-        <li>
-          <strong>Shadows of Beginnings</strong> — A top-down action RPG project with NebulaInteractive.
-          I am currently contributing to the project as part of the team, Mainly as the Level and Designer.
-        </li>
-        <li>
-          <strong>Vulkan Grid Renderer</strong> — A graphics programming project focused on real-time rendering,
-          shader setup, and transformation matrices.
-        </li>
-        <li>
-          <strong>GLTF Model Viewer</strong> — A 3D rendering project for loading and displaying glTF models,
-          with camera controls and lighting.
-        </li>
-        <li>
-          <strong>Tetris-Style ECS Game</strong> — A game project built with an entity-component-system structure,
-          featuring gameplay logic, graphics, audio, and collision handling.
-        </li>
-      </ul>
+    <section id="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="projects.html#zombies">
+          <h3>Zombies in the Basement</h3>
+          <p>Unity horror survival project with tense gameplay.</p>
+          <span>Unity • Horror • Gameplay</span>
+        </a>
+
+        <a class="project-card" href="projects.html#sob">
+          <h3>Shadows of Beginnings</h3>
+          <p>Top-down action RPG with level design focus.</p>
+          <span>Level Design • Team Project • RPG</span>
+        </a>
+
+        <a class="project-card" href="projects.html#vulkan">
+          <h3>Vulkan Grid Renderer</h3>
+          <p>Real-time rendering and shader pipeline work.</p>
+          <span>C++ • Vulkan • Graphics</span>
+        </a>
+      </div>
     </section>
+
 
     <section id="skills">
       <h2>Skills</h2>
