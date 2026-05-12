@@ -71,6 +71,27 @@ a { color: #00b2ff; }
   font-size: 0.9rem;
 }
 
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.visual-card {
+  background: #252030;
+  border: 1px solid #4b4360;
+  border-radius: 14px;
+  padding: 0.75rem;
+}
+
+.visual-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
 .button {
   display: inline-block;
   margin-top: 1rem;
