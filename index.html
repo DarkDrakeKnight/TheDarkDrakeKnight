@@ -2,77 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | DarkDrakeKnight's Portfolio</title>
+  <title>DarkDrakeKnight | Game Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Project Archive</p>
-      <h1>Projects</h1>
+      <p class="eyebrow">Game Developer • Veteran • Builder of Interactive Worlds</p>
+      <h1>DarkDrakeKnight's Portfolio</h1>
       <p class="hero-subtitle">
-        A collection of educational, technical, and creative work from my game development journey.
+        A game development portfolio blending technical skill, creativity, and a dark fantasy style.
       </p>
-      <a class="button" href="index.html">Back Home</a>
+      <div class="hero-buttons">
+        <a class="button" href="projects.html">View Projects</a>
+        <a class="button secondary" href="#resume">View Experience</a>
+      </div>
     </div>
   </header>
 
   <nav>
-    <a href="index.html#about">About</a>
-    <a href="index.html#resume">Experience</a>
+    <a href="#about">About</a>
+    <a href="#resume">Experience</a>
     <a href="projects.html">Projects</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <main>
-    <section class="panel">
-      <h2>Project Gallery</h2>
-      <p>Click any project to view its summary, breakdown, visuals, and reflection.</p>
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my forge. I am a game development student at Full Sail University with a strong interest in
+        interactive systems, gameplay programming, and creative worldbuilding. I enjoy learning through hands-on
+        projects and improving my skills one build at a time.
+      </p>
+      <p>
+        My background includes 13 years of active duty service in the U.S. Air Force as a maintenance craftsman.
+        That experience helped me develop discipline, adaptability, problem-solving, teamwork, and attention to detail.
+        Those strengths carry over into game development and help me stay focused when projects become challenging.
+      </p>
+      <p>
+        I like combining a gamer mindset with a technical approach. Whether I am working in Unity, Vulkan, or Unreal,
+        I am always looking for ways to create polished, functional, and engaging experiences for players.
+      </p>
+    </section>
 
+    <section id="resume" class="panel">
+      <h2>Résumé / Experience</h2>
+      <div class="resume-block">
+        <h3>Game Development Student</h3>
+        <p><strong>Full Sail University</strong> | Bachelor’s Program</p>
+        <p>
+          Training in game design, gameplay systems, programming, graphics, and project development.
+          Building projects in Unity, C#, C++, Vulkan, and Unreal Engine.
+        </p>
+      </div>
+
+      <div class="resume-block">
+        <h3>U.S. Air Force – Maintenance Craftsman</h3>
+        <p><strong>13 Years Active Duty</strong></p>
+        <p>
+          Developed strong technical troubleshooting skills, leadership, communication, and the ability to work under pressure.
+          Maintained a high standard of accuracy, reliability, and teamwork in fast-paced environments.
+        </p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Technical Skills</h3>
+        <ul class="skill-list">
+          <li>C++</li>
+          <li>C#</li>
+          <li>Unity</li>
+          <li>Unreal Engine</li>
+          <li>Vulkan</li>
+          <li>ECS Architecture</li>
+          <li>Gameplay Programming</li>
+          <li>Game Design</li>
+          <li>Git / GitHub</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="featured-projects" class="panel">
+      <h2>Featured Projects</h2>
       <div class="project-grid">
-        <a class="project-card" href="projects/zombies-in-the-building.html">
-          <h3>Zombies in the Building</h3>
-          <p>Unity survival project with a playable build and installer.</p>
+        <a class="project-card" href="projects/zombies-in-the-basement.html">
+          <h3>Zombies in the Basement</h3>
+          <p>First-person zombie survival project focused on tension and gameplay flow.</p>
           <span>Unity • Horror • Survival</span>
-        </a>
-
-        <a class="project-card" href="projects/behind-the-line.html">
-          <h3>Behind the Line</h3>
-          <p>Tetris-based game-within-a-game demo video and project showcase.</p>
-          <span>Gameplay • Puzzle • Systems</span>
-        </a>
-
-        <a class="project-card" href="projects/cne-project.html">
-          <h3>CNE Project</h3>
-          <p>Relay server project built to support local communication workflows.</p>
-          <span>Networking • Systems • Tools</span>
-        </a>
-
-        <a class="project-card" href="projects/spaghetti-relay.html">
-          <h3>Spaghetti Relay</h3>
-          <p>GUI relay tool with demo video and supporting build files.</p>
-          <span>GUI • Networking • Utility</span>
-        </a>
-
-        <a class="project-card" href="projects/vulkan-line-drawing.html">
-          <h3>Vulkan Line Drawing</h3>
-          <p>Graphics programming project focused on rendered lines and FPS.</p>
-          <span>C++ • Vulkan • Rendering</span>
         </a>
 
         <a class="project-card" href="projects/game-of-life.html">
           <h3>Game of Life</h3>
-          <p>Simulation project based on Conway’s Game of Life.</p>
-          <span>C# • Logic • Simulation</span>
+          <p>Logic-based simulation project built around cellular rules and visual feedback.</p>
+          <span>C# • Simulation • Logic</span>
         </a>
 
-        <a class="project-card" href="projects/shadows-of-beginnings.html">
-          <h3>Shadows of Beginnings</h3>
-          <p>Top-down action RPG team project with level design focus.</p>
-          <span>Unreal • Level Design • Team Project</span>
+        <a class="project-card" href="projects/vulkan-grid-renderer.html">
+          <h3>Vulkan Grid Renderer</h3>
+          <p>Graphics programming project focused on rendering, transforms, and shaders.</p>
+          <span>C++ • Vulkan • Rendering</span>
         </a>
       </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:TheDarkDrakeKnight@gmail.com">TheDarkDrakeKnight@gmail.com</a></li>
+        <li>GitHub Pages: <a href="https://TheDarkDrakeKnight.github.io">TheDarkDrakeKnight.github.io</a></li>
+        <li>GitHub: <a href="https://github.com/DarkDrakeKnight">github.com/DarkDrakeKnight</a></li>
+        <li>LinkedIn: <a href="#">Add your LinkedIn link here</a></li>
+        <li>Resume: <a href="#">Add your resume PDF link here</a></li>
+      </ul>
     </section>
   </main>
 
